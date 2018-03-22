@@ -39,3 +39,5 @@ Date.prototype.format = function(fmt) { //author: meizz
 ###### 用法
 > var date = new Date();
 > date.format('yyyy-MM-dd hh:mm:ss.S')
+
+
