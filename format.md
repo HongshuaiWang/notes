@@ -1,5 +1,7 @@
 #### 字符串format
 
+###### 实现
+
 ```
 String.prototype.format = function () {
     var args = arguments;
@@ -13,9 +15,11 @@ String.prototype.format = function () {
 };
 ```
 ###### 用法
-> 'My name is {0} , I love {1}'.format('Nicholas', 'Javascript')
+> 'My name is {0} , I love {1}'.format('Nicholas', 'Javascript');  
 
 #### 日期format
+
+###### 实现
 
 ```
 Date.prototype.format = function(fmt) { //author: meizz
@@ -37,7 +41,7 @@ Date.prototype.format = function(fmt) { //author: meizz
 };
 ```
 ###### 用法
-> var date = new Date();
-> date.format('yyyy-MM-dd hh:mm:ss.S')
+> var date = new Date();  
+> date.format('yyyy-MM-dd hh:mm:ss.S');  
 
 
