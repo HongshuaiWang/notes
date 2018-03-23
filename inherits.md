@@ -58,6 +58,7 @@ window.inherits = function (subType, superType) {
   
 ###### 使用方式
 ```
+// module1.js
 function People(name, age) {
     this.name = name;
     this.age = age;
@@ -69,6 +70,7 @@ People.prototype.introduce = function () {
   
   
   
+// module2.js
 function Male(name, age) {
     People.call(this, name, age);
 }
@@ -82,6 +84,7 @@ Male.prototype.introduce = function () {
   
   
   
+// module3.js  
 function Female(name, age) {
     People.call(this, name, age);
 }
@@ -90,6 +93,7 @@ inherits(Female, People);
   
   
   
+// module4.js
 function MaleModel(name, age) {
     Male.call(this, name, age);
 }
